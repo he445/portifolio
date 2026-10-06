@@ -1,216 +1,493 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Everton Ferreira | Portfólio</title>
+    <title>Everton Ferreira | Desenvolvedor júnior em Campo Grande, MS</title>
+    <meta
+      name="description"
+      content="Portfólio de Everton Ferreira, desenvolvedor júnior em Campo Grande (MS). React, TypeScript e NestJS: projetos no ar, código no GitHub e currículo em PDF."
+    />
+    <meta name="author" content="Everton Ferreira" />
+    <meta name="theme-color" content="#FAFAF7" />
+    <link rel="canonical" href="https://portifolio-theta-neon.vercel.app/" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Everton Ferreira" />
+    <meta
+      property="og:title"
+      content="Everton Ferreira | Desenvolvedor front-end e fullstack júnior"
+    />
+    <meta
+      property="og:description"
+      content="React, TypeScript e NestJS. Projetos no ar, código no GitHub e currículo em PDF. Campo Grande, MS."
+    />
+    <meta
+      property="og:url"
+      content="https://portifolio-theta-neon.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://portifolio-theta-neon.vercel.app/assets/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Everton Ferreira, desenvolvedor front-end e fullstack júnior"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link
+      rel="preload"
+      href="assets/fonts/bricolage-grotesque-latin-wdth-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/literata-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Everton Ferreira",
+        "jobTitle": "Desenvolvedor front-end e fullstack júnior",
+        "url": "https://portifolio-theta-neon.vercel.app/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Campo Grande",
+          "addressRegion": "MS",
+          "addressCountry": "BR"
+        },
+        "sameAs": [
+          "https://github.com/he445",
+          "https://www.linkedin.com/in/everton-ferreira-da-silva-46643a215"
+        ],
+        "knowsAbout": [
+          "React",
+          "TypeScript",
+          "NestJS",
+          "Prisma",
+          "PostgreSQL",
+          "Engenharia de prompt"
+        ]
+      }
+    </script>
   </head>
 
   <body>
-    <header class="hero">
-      <div class="container">
-        <p class="eyebrow">Desenvolvedor Front-end / Fullstack Jr</p>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-        <h1>Everton Ferreira</h1>
+    <header class="topbar" id="topo">
+      <div class="wrap topbar-in">
+        <a class="brand" href="#topo">Everton Ferreira</a>
 
-        <p class="hero-text">
-          Desenvolvedor focado em aplicações web modernas utilizando React,
-          TypeScript e APIs REST. Tenho interesse em interfaces voltadas para
-          experiência de uso, narrativa e organização de produto.
-        </p>
+        <nav class="nav" aria-label="Principal">
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="primary-btn"> Ver projetos </a>
-
-          <a
-            href="https://github.com/he445"
-            target="_blank"
-            class="secondary-btn"
-          >
-            GitHub
-          </a>
-        </div>
+        <a
+          class="btn btn-sm"
+          href="assets/Everton-Ferreira-Curriculo-Dev-Junior.pdf"
+          download
+          aria-label="Baixar currículo em PDF"
+          >Currículo</a
+        >
       </div>
     </header>
 
-    <main>
-      <section class="about container">
-        <div class="section-header">
-          <p class="section-tag">Sobre</p>
+    <main id="conteudo">
+      <section class="hero wrap" aria-labelledby="nome">
+        <h1 class="hero-name" id="nome" aria-label="Everton Ferreira">
+          <span class="line" aria-hidden="true"><span>Everton</span></span>
+          <span class="line" aria-hidden="true"><span>Ferreira</span></span>
+        </h1>
 
-          <h2>
-            Desenvolvimento focado em aplicações reais e interfaces consistentes
-          </h2>
+        <div class="hero-copy">
+          <p class="hero-role">
+            Desenvolvedor <span class="nw">front-end</span> e fullstack júnior
+          </p>
+          <p class="hero-lead">
+            Construo aplicações web completas, da interface à API e ao banco de
+            dados, com React, TypeScript e NestJS. Estou em busca de uma vaga de
+            desenvolvedor júnior em Campo Grande (MS).
+          </p>
+
+          <div class="actions">
+            <a class="btn" href="#projetos">Ver projetos</a>
+            <a
+              class="btn btn-ghost"
+              href="assets/Everton-Ferreira-Curriculo-Dev-Junior.pdf"
+              download
+              >Baixar currículo</a
+            >
+          </div>
+
+          <p class="hero-links">
+            <a
+              class="ink-link"
+              href="https://github.com/he445"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub<span class="sr-only"> (abre em nova aba)</span></a
+            >
+            <a
+              class="ink-link"
+              href="https://www.linkedin.com/in/everton-ferreira-da-silva-46643a215"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn<span class="sr-only"> (abre em nova aba)</span></a
+            >
+          </p>
         </div>
-
-        <p class="about-text">
-          Trabalho principalmente com React, TypeScript e consumo de APIs REST,
-          utilizando ferramentas modernas do ecossistema JavaScript. Tenho
-          experiência com aplicações fullstack usando NestJS, Prisma e
-          PostgreSQL, além de projetos voltados para interfaces institucionais e
-          experiências narrativas interativas.
-        </p>
       </section>
 
-      <section id="projects" class="projects container">
-        <div class="section-header">
-          <p class="section-tag">Projetos</p>
+      <section class="section" id="projetos" aria-labelledby="projetos-titulo">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="h2" id="projetos-titulo">Projetos</h2>
+            <p class="section-intro">
+              Aplicações no ar, com o código aberto no GitHub. O Ojanuan é o
+              mais completo e ainda está em desenvolvimento.
+            </p>
+          </div>
 
-          <h2>Projetos desenvolvidos para estudo e prática profissional</h2>
-        </div>
+          <article class="feature" aria-labelledby="ojanuan-titulo">
+            <div class="feature-main">
+              <h3 class="feature-title" id="ojanuan-titulo">
+                Ojanuan <span class="chip-status">Em desenvolvimento</span>
+              </h3>
 
-        <div class="project-grid">
-          <!-- Projeto 1 -->
-
-          <article class="project-card">
-            <div class="project-content">
-              <span class="project-type"> Jogo Narrativo </span>
-
-              <h3>Batalha de Stalingrado</h3>
-
-              <p>
-                Aplicação narrativa interativa inspirada na Batalha de
-                Stalingrado, focada em progressão por escolhas e construção de
-                atmosfera histórica.
+              <p class="feature-lead">
+                Plataforma de acompanhamento terapêutico que liga psicólogos e
+                pacientes. O profissional agenda consultas, conversa por chat,
+                acompanha a autoavaliação diária de bem-estar do paciente e gera
+                o <span class="nw">livro-caixa</span> para o
+                <span class="nw">Carnê-Leão</span>.
               </p>
 
-              <div class="stack">
-                <span>React</span>
-                <span>Vite</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-              </div>
-
-              <div class="project-links">
+              <div class="actions">
                 <a
-                  href="https://stalingrad-web-app.vercel.app/"
+                  class="btn"
+                  href="https://ojanuan.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver demo<span class="sr-only"> (abre em nova aba)</span></a
                 >
-                  Deploy
-                </a>
-
                 <a
-                  href="https://github.com/he445/StalingradWebApp"
+                  class="btn btn-ghost"
+                  href="https://github.com/he445/apps"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver código<span class="sr-only"> (abre em nova aba)</span></a
                 >
-                  GitHub
-                </a>
               </div>
+            </div>
+
+            <div class="feature-detail">
+              <h4 class="detail-title">Como é construído</h4>
+
+              <ol class="layers">
+                <li class="layer">
+                  <h5 class="layer-title">
+                    Interface <span class="host">Vercel</span>
+                  </h5>
+                  <p>
+                    React 19, TypeScript, Tailwind e Recharts.
+                    <span class="nw">Mobile-first</span> e instalável como PWA.
+                    Dois perfis, profissional e paciente, com chat por polling e
+                    autoavaliação diária com gráficos.
+                  </p>
+                </li>
+
+                <li class="layer">
+                  <h5 class="layer-title">
+                    API REST <span class="host">Render</span>
+                  </h5>
+                  <p>
+                    NestJS com validação de DTOs, login com JWT, convites por
+                    token e documentação em Swagger. Um script de testes de
+                    integração E2E cobre autenticação, convites, chat e
+                    relatórios.
+                  </p>
+                </li>
+
+                <li class="layer">
+                  <h5 class="layer-title">Banco de dados</h5>
+                  <p>
+                    PostgreSQL com Prisma e migrations versionadas. O conteúdo
+                    clínico, como chat e anotações, é cifrado com
+                    <span class="nw">AES-256-GCM</span> antes de ser gravado.
+                    Exportação e exclusão de dados do titular, pensadas para a
+                    LGPD.
+                  </p>
+                </li>
+              </ol>
             </div>
           </article>
 
-          <!-- Projeto 2 -->
-
-          <article class="project-card">
-            <div class="project-content">
-              <span class="project-type"> Aplicação Fullstack </span>
-
-              <h3>Diário Online</h3>
-
+          <div class="proj-grid">
+            <article class="proj" aria-labelledby="diario-titulo">
+              <h3 class="proj-title" id="diario-titulo">Diário Online</h3>
+              <p class="proj-type">Aplicação fullstack</p>
               <p>
-                Plataforma de escrita e publicação de textos desenvolvida com
-                React e TypeScript no frontend e API REST utilizando NestJS,
-                Prisma e PostgreSQL no backend.
+                Plataforma para escrever e publicar textos. O
+                <span class="nw">front-end</span> em React e TypeScript consome
+                uma API REST em NestJS, com Prisma e PostgreSQL.
               </p>
-
-              <div class="stack">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Axios</span>
-                <span>NestJS</span>
-                <span>Prisma</span>
-                <span>PostgreSQL</span>
-              </div>
-
-              <div class="project-links">
+              <ul class="chips" aria-label="Tecnologias">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Material UI</li>
+                <li>Axios</li>
+                <li>NestJS</li>
+                <li>Prisma</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <p class="proj-links">
                 <a
+                  class="ink-link"
                   href="https://diario-front-ofc.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver demo<span class="sr-only"> (abre em nova aba)</span></a
                 >
-                  Deploy
-                </a>
-
                 <a
+                  class="ink-link"
                   href="https://github.com/he445/diarioFrontOfc/tree/master/react-ts"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver código do front-end<span class="sr-only">
+                    (abre em nova aba)</span
+                  ></a
                 >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projeto 3 -->
-
-          <article class="project-card">
-            <div class="project-content">
-              <span class="project-type"> Landing Page </span>
-
-              <h3>Campanha para Vereador</h3>
-
-              <p>
-                Página institucional desenvolvida para campanha política
-                regional, focada em comunicação visual direta, apresentação de
-                propostas e adaptação responsiva.
               </p>
+            </article>
 
-              <div class="stack">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-
-              <div class="project-links">
+            <article class="proj" aria-labelledby="stalingrado-titulo">
+              <h3 class="proj-title" id="stalingrado-titulo">
+                Batalha de Stalingrado
+              </h3>
+              <p class="proj-type">Jogo narrativo</p>
+              <p>
+                Adaptação web de um jogo de texto que nasceu no terminal, em
+                Node.js. A história avança por missões, escolhas e testes de
+                dado (d20), ambientada na Batalha de Stalingrado.
+              </p>
+              <ul class="chips" aria-label="Tecnologias">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>Tailwind CSS</li>
+                <li>Motion</li>
+              </ul>
+              <p class="proj-links">
                 <a
+                  class="ink-link"
+                  href="https://stalingrad-web-app.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ver demo<span class="sr-only"> (abre em nova aba)</span></a
+                >
+                <a
+                  class="ink-link"
+                  href="https://github.com/he445/StalingradWebApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ver código<span class="sr-only"> (abre em nova aba)</span></a
+                >
+              </p>
+            </article>
+
+            <article class="proj" aria-labelledby="campanha-titulo">
+              <h3 class="proj-title" id="campanha-titulo">
+                Campanha para vereadora
+              </h3>
+              <p class="proj-type">Landing page</p>
+              <p>
+                Página institucional responsiva para uma campanha política
+                regional, com comunicação visual direta, apresentação das
+                propostas e menu adaptado ao celular.
+              </p>
+              <ul class="chips" aria-label="Tecnologias">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <p class="proj-links">
+                <a
+                  class="ink-link"
                   href="https://ladi-pi.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver demo<span class="sr-only"> (abre em nova aba)</span></a
                 >
-                  Deploy
-                </a>
-
                 <a
+                  class="ink-link"
                   href="https://github.com/he445/ladi"
                   target="_blank"
                   rel="noopener noreferrer"
+                  >Ver código<span class="sr-only"> (abre em nova aba)</span></a
                 >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="contact container">
-        <div class="section-header">
-          <p class="section-tag">Contato</p>
+      <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="h2" id="sobre-titulo">Sobre</h2>
+          </div>
 
-          <h2>Contato e redes</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Sou desenvolvedor em Campo Grande (MS). Trabalho com React e
+                TypeScript no <span class="nw">front-end</span> e com NestJS,
+                Prisma e PostgreSQL no <span class="nw">back-end</span>, e gosto
+                de acompanhar um projeto inteiro: interface, API, banco de dados
+                e deploy.
+              </p>
+              <p>
+                Tenho experiência com engenharia de prompt e com a integração de
+                IA ao ambiente de trabalho.
+              </p>
+              <p>
+                Estou concluindo a graduação em História pela UFMS. A pesquisa e
+                a escrita acadêmica me deram o hábito de ler com atenção,
+                organizar informação e explicar com clareza, e levo isso para o
+                código e para a conversa com a equipe.
+              </p>
+            </div>
+
+            <div class="about-facts">
+              <h3 class="facts-title">Tecnologias</h3>
+              <dl class="facts">
+                <div class="fact">
+                  <dt>Front-end</dt>
+                  <dd>
+                    React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Vite
+                  </dd>
+                </div>
+                <div class="fact">
+                  <dt>Back-end</dt>
+                  <dd>Node.js, NestJS, Prisma, APIs REST, JWT</dd>
+                </div>
+                <div class="fact">
+                  <dt>Dados</dt>
+                  <dd>PostgreSQL, MongoDB</dd>
+                </div>
+                <div class="fact">
+                  <dt>Ferramentas</dt>
+                  <dd>Git, GitHub, Vercel, Render, Swagger</dd>
+                </div>
+                <div class="fact">
+                  <dt>IA</dt>
+                  <dd>Engenharia de prompt, integração de IA no trabalho</dd>
+                </div>
+              </dl>
+
+              <h3 class="facts-title">Formação</h3>
+              <dl class="facts">
+                <div class="fact">
+                  <dt>2023</dt>
+                  <dd>
+                    Curso profissionalizante de Desenvolvimento Web, BlueEdTech
+                  </dd>
+                </div>
+                <div class="fact">
+                  <dt>UFMS</dt>
+                  <dd>Licenciatura em História, em conclusão</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="contact-links">
-          <a href="mailto:everton.f.silva0@gmail.com"> Email </a>
+      <section
+        class="section contact on-dark"
+        id="contato"
+        aria-labelledby="contato-titulo"
+      >
+        <div class="wrap">
+          <h2 class="h2" id="contato-titulo">Contato</h2>
+          <p class="contact-lead">
+            Estou em busca de uma vaga de desenvolvedor júnior em Campo Grande.
+            Se o seu time tem espaço, me escreva.
+          </p>
 
-          <a href="https://github.com/he445" target="_blank"> GitHub </a>
+          <p class="contact-mail">
+            <a class="mail-link" href="mailto:everton.f.silva0@gmail.com"
+              >everton.f.silva0@gmail.com</a
+            >
+          </p>
+          <p class="contact-copy">
+            <button
+              type="button"
+              class="copy-btn"
+              data-copy-email="everton.f.silva0@gmail.com"
+              hidden
+            >
+              Copiar e-mail
+            </button>
+            <span
+              class="sr-only"
+              role="status"
+              aria-live="polite"
+              id="copy-status"
+            ></span>
+          </p>
 
-          <a
-            href="https://www.linkedin.com/in/everton-ferreira-da-silva-46643a215
-"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
+          <p class="contact-links">
+            <a
+              class="ink-link"
+              href="https://www.linkedin.com/in/everton-ferreira-da-silva-46643a215"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn<span class="sr-only"> (abre em nova aba)</span></a
+            >
+            <a
+              class="ink-link"
+              href="https://github.com/he445"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub<span class="sr-only"> (abre em nova aba)</span></a
+            >
+            <a
+              class="ink-link"
+              href="assets/Everton-Ferreira-Curriculo-Dev-Junior.pdf"
+              download
+              >Baixar currículo (PDF)</a
+            >
+          </p>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer on-dark">
+      <div class="wrap footer-in">
+        <p>© <span id="ano">2026</span> Everton Ferreira</p>
+        <p>Feito com HTML, CSS e JavaScript, sem framework.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
